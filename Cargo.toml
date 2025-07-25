@@ -1,0 +1,11 @@
+[package]
+name = "rust_project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+firebase-rs = "2.2.1"
+rayon = "1.10.0"
+serde = "1.0.219"
+thiserror = "2.0.12"
+tokio = "1.46.1"
