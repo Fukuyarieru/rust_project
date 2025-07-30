@@ -1,6 +1,7 @@
 use bevy::prelude::*;
-use crate::prelude::*;
+// use prelude::*;
 use bevy_ecs_tilemap::prelude::*;
+
 
 // used as an example for now
 
@@ -10,7 +11,9 @@ fn startup(
 ) {
     commands.spawn(Camera2d);
 
-    let map_size= TileMap { x:32,y:32};
+    let texture_handle: Handle<Image> = asset_server.load("tiles.png");
+
+    let map_size= TilemapSize { x:32,y:32};
 
     let tilemap_entity= commands.spawn_empty().id();
 

@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 bevy = "0.16.1"
+bevy_ecs_tilemap = "0.16.0"
 firebase-rs = "2.2.1"
 rayon = "1.10.0"
 serde = "1.0.219"
