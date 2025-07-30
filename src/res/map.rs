@@ -5,13 +5,14 @@ use bevy_ecs_tilemap::prelude::*;
 
 // used as an example for now
 
-fn startup(
+pub fn startup(
     mut commands: Commands,
     asset_server: Res<AssetServer>,
 ) {
     commands.spawn(Camera2d);
 
-    let texture_handle: Handle<Image> = asset_server.load("tiles.png");
+    // let texture_handle: Handle<Image> = asset_server.load("tiles.png");
+    let texture_handle: Handle<Image> = Handle::default();
 
     let map_size= TilemapSize { x:32,y:32};
 

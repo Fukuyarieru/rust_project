@@ -5,5 +5,5 @@ use bevy::prelude::*;
 use crate::prelude::*;
 
 fn main() {
-    let app=App::new().add_plugins(DefaultPlugins);
+    let app=App::new().add_plugins(DefaultPlugins).add_systems(Startup, startup).run();
 }
