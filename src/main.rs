@@ -1,9 +1,12 @@
-mod res;
 mod prelude;
+mod res;
 
-use bevy::prelude::*;
 use crate::prelude::*;
+use bevy::prelude::*;
 
 fn main() {
-    let app=App::new().add_plugins(DefaultPlugins).add_systems(Startup, startup).run();
+    let app = App::new()
+        .add_plugins(DefaultPlugins)
+        .add_systems(Startup, startup)
+        .run();
 }
